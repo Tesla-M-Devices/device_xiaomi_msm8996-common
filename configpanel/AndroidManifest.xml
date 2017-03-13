@@ -28,7 +28,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher_settings"
-        android:label="@string/device_settings_app_name"
+        android:label="Advanced settings"
         android:theme="@style/Theme.Main"
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">
@@ -47,7 +47,7 @@
 
         <activity
             android:name=".ButtonSettings"
-            android:label="@string/button_panel_title">
+            android:label="Advanced settings">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
@@ -61,7 +61,7 @@
 
         <receiver android:name=".Startup" >
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.INITIALIZE_CM_HARDWARE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
     </application>
