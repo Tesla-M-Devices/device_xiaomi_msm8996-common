@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.power.rc \
     init.qcom.usb.rc \
-    init.xiaomi.rc \
     ueventd.qcom.rc
 
 # Display
